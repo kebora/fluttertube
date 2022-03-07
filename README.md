@@ -7,7 +7,7 @@ I have rewritten the code with sound null safety.
 Much of my reference is from the [Marcus Ng's repo](https://github.com/MarcusNg/flutter_youtube_api).
 
 ## Installation
-* Visit [Google Cloud Console]('https://console.cloud.google.com/'), add and enable the YouTube API.
+* Visit [Google Cloud Console](https://console.cloud.google.com/), add and enable the YouTube API.
 * Create a file on the Utilities folder named keys.dart with the api key initialization as below:
 
 ```
