@@ -8,7 +8,7 @@ Much of my reference is from the [Marcus Ng's repo](https://github.com/MarcusNg/
 
 ## Installation
 * Visit [Google Cloud Console](https://console.cloud.google.com/), add and enable the YouTube API.
-* Create a file on the Utilities folder named keys.dart with the api key initialization as below:
+* Create a file in the Utilities folder named keys.dart with the api key initialization as below:
 
 ```
 const String apiKey = 'your youtube api key from the google console';
