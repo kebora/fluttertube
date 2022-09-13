@@ -177,7 +177,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // backgroundColor: Colors.brown,
       appBar: AppBar(
+        backgroundColor: Colors.brown,
+        // backgroundColor: const Color.fromARGB(100, 255, 85, 85),
         title: const Text(
           'FlutterTube',
           style: TextStyle(fontFamily: 'KumarOneOutline', color: Colors.white),
@@ -185,39 +188,48 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: const Icon(Icons.info_rounded),
+            icon: const Icon(
+              Icons.info_rounded,
+            ),
             onPressed: () => CoolAlert.show(
+              autoCloseDuration: const Duration(seconds: 4),
+              backgroundColor: Colors.brown,
               title: "FlutterTube",
               context: context,
               type: CoolAlertType.info,
-              text: "v 1.0.0",
+              text: "v 1.1.0",
             ),
           ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedFontSize: 13,
+        unselectedFontSize: 13,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.white,
+        backgroundColor: Colors.brown,
         onTap: _onItemTapped,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(
-              FontAwesomeIcons.userFriends,
-              color: Colors.blueAccent,
+              FontAwesomeIcons.google,
+              // color: Colors.blueAccent,
             ),
             label: 'Flutter',
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              FontAwesomeIcons.userAlt,
-              color: Colors.green,
+              FontAwesomeIcons.playCircle,
+              // color: Colors.green,
             ),
             label: 'ResoCoder',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               FontAwesomeIcons.userCircle,
-              color: Colors.blueAccent,
+              // color: Colors.blueAccent,
             ),
-            label: 'FlutterFly',
+            label: 'Flutterly',
           ),
         ],
       ),
