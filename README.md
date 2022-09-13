@@ -1,16 +1,21 @@
 # fluttertube
 
-A new Flutter project.
+This application uses the YouTube API to display and play the contents of 3 flutter-related channels.
+I have rewritten the code with sound null safety.
 
-## Getting Started
+## Guides
+Much of my reference is from the [Marcus Ng's repo](https://github.com/MarcusNg/flutter_youtube_api).
 
-This project is a starting point for a Flutter application.
+## Installation
+* Visit [Google Cloud Console](https://console.cloud.google.com/), add and enable the YouTube API.
+* Create a file in the Utilities folder named keys.dart with the api key initialization as below:
 
-A few resources to get you started if this is your first Flutter project:
+```
+const String apiKey = 'your youtube api key from the google console';
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* Get the packages using pub get and the run the project.
+* All the channel ids are stored in utilities/channel_ids.dart.
+* To change the channels displayed, watch this video on how to get the id of any channel on youtube. [Video here](https://www.youtube.com/watch?v=D12v4rTtiYM&t=50s&ab_channel=WebbyFan.com)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Feel free to add new features and make PRs so that we can improve FlutterTube, as we learn more together.
