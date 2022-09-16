@@ -197,7 +197,7 @@ class _HomeScreenState extends State<HomeScreen> {
               title: "FlutterTube",
               context: context,
               type: CoolAlertType.info,
-              text: "v 1.1.0",
+              text: "v 2.0.0",
             ),
           ),
         ],
